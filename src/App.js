@@ -9,9 +9,8 @@ import FormControlLabel  from '@material-ui/core/FormControlLabel';
 function CheckboxExample(){
   const [checked, setChecked] = React.useState(true)
   return(
-    
     <FormControlLabel  
-    control={<Checkbox 
+     control={<Checkbox 
         checked={checked}
         icon={<DeleteIcon/>}
         checkedIcon={<SaveIcon />}
@@ -22,35 +21,33 @@ function CheckboxExample(){
       />}
       label="Testing Checkbox"
     />
-
-      
-    
+  
   )
 }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <CheckboxExample />
-      <ButtonGroup variant="contained" color="primary">
       
-      <Button
-      startIcon={<SaveIcon />}
-      size="small" href="#" variant="contained" color="secondary">
-      Save
-      </Button>
+    <header className="App-header">
+      
+      <CheckboxExample />
 
-      <Button
-      startIcon={<DeleteIcon />}
-      size="small" href="#" variant="contained" color="secondary">
-      Discard
-      </Button>
-        
-       </ButtonGroup>
+      <ButtonGroup variant="contained" color="primary">
+          <Button
+            startIcon={<SaveIcon />} size="small" href="#" variant="contained" color="secondary">
+              Save
+          </Button>
+
+          <Button
+            startIcon={<DeleteIcon />} size="small" href="#" variant="contained" color="secondary">
+              Discard
+          </Button>    
+      </ButtonGroup>
 
       </header>
-    </div>
+    
+      </div>
   );
 }
 
