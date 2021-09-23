@@ -7,6 +7,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel  from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
 
+
 function CheckboxExample(){
   const [checked, setChecked] = React.useState(true)
   return(
@@ -31,7 +32,9 @@ function App() {
     <div className="App">
       
     <header className="App-header">
-    <TextField />
+    <TextField variant="outlined" color="secondary" />
+    <br />
+    <TextField variant="outlined" color="secondary" />
       <CheckboxExample />
       
       <ButtonGroup variant="contained" color="primary">
