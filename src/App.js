@@ -15,7 +15,7 @@ function CheckboxExample(){
      control={<Checkbox 
         checked={checked}
         icon={<DeleteIcon/>}
-        checkedIcon={<SaveIcon />}
+        checkedIcon={<DeleteIcon />}
         onChange={(e) => setChecked(e.target.checked)}
         inputProps={{
           'aria-label':'primary checked'  
@@ -32,9 +32,9 @@ function App() {
     <div className="App">
       
     <header className="App-header">
-    <TextField variant="outlined" color="secondary" />
+    <TextField variant="outlined" label="First Name" color="secondary" />
     <br />
-    <TextField variant="outlined" color="secondary" />
+    <TextField variant="outlined" label="Last Name" color="secondary" />
       <CheckboxExample />
       
       <ButtonGroup variant="contained" color="primary">
