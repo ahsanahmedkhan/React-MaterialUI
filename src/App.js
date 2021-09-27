@@ -7,7 +7,9 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel  from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
 
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, ThemeProvider, createTheme } from '@material-ui/core/styles';
+
+import { blue, cyan, orange, pink, red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles({
   root:{
@@ -17,6 +19,14 @@ const useStyles = makeStyles({
     borderRadius: 5,
     color: 'white',
     padding: '10px 68px'
+  }
+})
+
+const theme = createTheme({
+  palette:{
+    primary:{
+      main: cyan[800],
+    }
   }
 })
 
@@ -47,11 +57,13 @@ function CheckboxExample(){
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
       
     <header className="App-header">
-    <Typography variant="h6" >Education is the basic need of humanity</Typography>
+    <Typography variant="h6">Education is the basic need of humanity</Typography>
     <Typography variant="h4">Fill The Form</Typography>
+    
     <TextField variant="outlined" label="First Name" placeholder="Ahsan" color="primary" />
     <br />
     <TextField variant="outlined" label="Last Name" placeholder="Khan" color="primary" />
@@ -73,6 +85,7 @@ function App() {
       <ButtonStyled />
       </header>
       </div>
+      </ThemeProvider>
   );
 }
 
