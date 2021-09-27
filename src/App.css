@@ -12,9 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+h4{
+  margin-bottom: 20px !important;
+}
 input{
   color: white !important;
+  
 }
 
 .App-header {

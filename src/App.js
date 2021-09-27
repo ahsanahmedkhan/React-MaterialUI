@@ -61,7 +61,7 @@ function App() {
     <div className="App">
       
     <header className="App-header">
-    <Typography variant="h6">Education is the basic need of humanity</Typography>
+
     <Typography variant="h4">Fill The Form</Typography>
     
     <TextField variant="outlined" label="First Name" placeholder="Ahsan" color="primary" />
