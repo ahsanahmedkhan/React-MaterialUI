@@ -65,9 +65,9 @@ function App() {
 
     <Typography variant="h4">Fill The Form</Typography>
     
-    <TextField variant="outlined" label="First Name" placeholder="Ahsan" color="primary" />
+    <TextField variant="filled" label="First Name" placeholder="Ahsan" color="primary" />
     <br />
-    <TextField variant="outlined" label="Last Name" placeholder="Khan" color="primary" />
+    <TextField variant="standard" label="Last Name" placeholder="Khan" color="primary" />
     <br />
     <TextField variant="outlined" label="Email" type="email" placeholder="bdoahsan@gmail.com" color="primary" />
       <CheckboxExample color="primary" />
