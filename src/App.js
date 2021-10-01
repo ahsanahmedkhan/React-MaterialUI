@@ -8,7 +8,7 @@ import FormControlLabel  from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
 
 import { makeStyles, ThemeProvider, createTheme } from '@material-ui/core/styles';
-
+//typography for fonts
 import {cyan } from '@material-ui/core/colors';
 import 'fontsource-roboto';
 
@@ -60,9 +60,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div className="App">
-      
     <header className="App-header">
 
+    <Typography variant="h4">Fill The Form</Typography>
     <Typography variant="h4">Fill The Form</Typography>
     
     <TextField variant="filled" label="First Name" placeholder="Ahsan" color="primary" />
