@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 const theme = createTheme({
   palette:{
     primary:{
-      main: cyan[800],
+      main: cyan[800], 
     }
   }
 })
@@ -59,7 +59,9 @@ function CheckboxExample(){
 function App() {
   return (
     <ThemeProvider theme={theme}>
+
     <div className="App">
+
     <header className="App-header">
 
     <Typography variant="h4">Fill The Form</Typography>
