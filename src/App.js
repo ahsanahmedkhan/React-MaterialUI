@@ -11,7 +11,8 @@ import { makeStyles, ThemeProvider, createTheme } from '@material-ui/core/styles
 //typography for fonts
 import {cyan, lightBlue } from '@material-ui/core/colors';
 import 'fontsource-roboto';
-import { Subtitles } from '@material-ui/icons';
+import { AppBar, Toolbar, IconButton } from '@material-ui/core';
+import { Menu }  from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root:{
@@ -31,6 +32,7 @@ const theme = createTheme({
       marginBottom: 10,
     }
   },
+ 
   palette:{
     primary:{
       main: cyan[800], 
@@ -73,6 +75,19 @@ function App() {
     <div className="App">
 
     <header className="App-header">
+    <AppBar color="transparent">
+      <Toolbar>
+        <IconButton>
+          <Menu color="secondary"  />
+        </IconButton>
+        <Typography variant="h6">
+            Material UI AppBar
+        </Typography>
+        <Button variant="text" color="secondary">
+          Login
+        </Button>
+      </Toolbar>
+    </AppBar>
 
     <Typography variant="h3">Welcome to MUI</Typography>
     <Typography variant="subtitle1">Learn How to use Material UI</Typography>
@@ -84,14 +99,14 @@ function App() {
     <TextField variant="outlined" label="Email" type="email" placeholder="bdoahsan@gmail.com" color="primary" />
       <CheckboxExample color="primary" />
       
-      <ButtonGroup variant="contained" color="primary">
+      <ButtonGroup variant="contained" color="secondary">
           <Button
-            startIcon={<SaveIcon />} size="small" href="#" variant="contained" color="primary">
+            startIcon={<SaveIcon />} size="small" href="#" variant="contained" color="secondary">
               Save
           </Button>
 
           <Button
-            startIcon={<DeleteIcon />} size="small" href="#" variant="contained" color="primary">
+            startIcon={<DeleteIcon />} size="small" href="#" variant="contained" color="secondary">
               Discard
           </Button>    
       </ButtonGroup>
