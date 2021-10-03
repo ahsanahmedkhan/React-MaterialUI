@@ -6,11 +6,12 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel  from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
-
+  
 import { makeStyles, ThemeProvider, createTheme } from '@material-ui/core/styles';
 //typography for fonts
-import {cyan } from '@material-ui/core/colors';
+import {cyan, lightBlue } from '@material-ui/core/colors';
 import 'fontsource-roboto';
+import { Subtitles } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root:{
@@ -24,9 +25,18 @@ const useStyles = makeStyles({
 })
 
 const theme = createTheme({
+  typography:{
+    h3: {
+      fontSize: 36,
+      marginBottom: 10,
+    }
+  },
   palette:{
     primary:{
       main: cyan[800], 
+    }, 
+    secondary:{
+      main: lightBlue[600],
     }
   }
 })
@@ -64,8 +74,8 @@ function App() {
 
     <header className="App-header">
 
-    <Typography variant="h4">Fill The Form</Typography>
-    <Typography variant="h4">Fill The Form</Typography>
+    <Typography variant="h3">Welcome to MUI</Typography>
+    <Typography variant="subtitle1">Learn How to use Material UI</Typography>
     
     <TextField variant="filled" label="First Name" placeholder="Ahsan" color="primary" />
     <br />
