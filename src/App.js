@@ -83,7 +83,7 @@ function App() {
         <Typography variant="h6">
             Material UI AppBar
         </Typography>
-        <Button variant="text" color="secondary">
+        <Button variant="outlined" color="inherit" >
           Login
         </Button>
       </Toolbar>
